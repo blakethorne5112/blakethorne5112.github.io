@@ -1106,11 +1106,7 @@ footer .footnote .highlight {
         min-width: 500px;
     }
 }
-@media screen and (min-width: 320px){
-  .flex.row-gt-sm {
-    flex-direction: row;
-  }
-}
+
 @media screen and (min-width: 960px) {
   .waypoint {
     opacity: 0;
