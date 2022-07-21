@@ -1,44 +1,403 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-          rel="stylesheet"
-          href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
-          crossorigin="anonymous"
-        />
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
-    <body>
-        <nav class="navbar">
-            <div class="container">
-              <div class="logo">Blake Thorne</div>
-              <ul class="nav">
-                <li>
-                  <a href="#">Home</a>
-                </li>
-                <li>
-                  <a href="#">About</a>
-                </li>
-                <li>
-                  <a href="#">Contact</a>
-                </li>
-              </ul>
+
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+
+
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,600italic,300italic,400italic,300,700italic,800italic,800"
+        rel="stylesheet" type="text/css" />
+    <link href="fonts/mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" />
+
+    <!-- LOCAL -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel='shortcut icon' href='favicon.png' type='image/x-icon' />
+
+    <!-- HOSTED -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
+    <!-- LOCAL -->
+    <script src="scripts/pt.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/modal.js"></script>
+</head>
+
+<body>
+    <div class="overflow-wrap">
+        <!-- HOME -->
+        <div class="modal-wrap flex">
+            <div class="mask"></div>
+            <div class="modal" id="modal">
+                <div class="carousel-wrap">
+                    <div class="window">
+                        <div id="carousel">
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                            <div class="slide"></div>
+                        </div>
+                        <i class="mdi mdi-chevron-left" id="prev"></i>
+                        <i class="mdi mdi-chevron-right" id="next"></i>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <div class="title"></div>
+                    <div class="tag"></div>
+                    <div class="detail"></div>
+                    <a href="#" target="_blank">
+                        <div class="button">
+                            <i class="mdi mdi-open-in-new"></i>VIEW SITE
+                        </div>
+                    </a>
+                </div>
+                <i class="close mdi mdi-close"></i>
             </div>
-          </nav>
-          <header class="header">
-            <div class="container">
-              <div>
-                <h1>About Me</h1>
-                <p>
-                  Currently a Second Year Software Engineering Student and UTS. Looking for work.
-                </p>
-              </div>
-              <img src="imgs/profile-picture.jpg" alt="" />
+        </div>
+
+        <section id="home" class="flex height-fix">
+            <div id="pt" class="canvas"></div>
+            <div class="flex">
+                <div style="font-weight: bold; z-index: 1;" class="text">
+                    Hello, my name is <span class="highlight">Blake Thorne</span>
+                    <br />
+                    <br />
+                    <span style="font-size:20pt; font-weight: normal;">
+                        I am a second year Software Engineering student at UTS
+                        <br />
+                        and I am currently open for work
+                        <br />
+                        <br />
+                    </span>
+                </div>
+
+                <div class="button page-link" dest="about">
+                    Continue... <i class="mdi mdi-arrow-right"></i>
+                </div>
+
+                <nav class="flex">
+                    <div class="link-wrap">
+                        <div class="active page-link" dest="home">home</div>
+                        <div class="page-link" dest="about">about</div>
+                        <div class="page-link" dest="portfolio">portfolio</div>
+                        <div class="page-link" dest="contact">contact</div>
+                    </div>
+                    <i class="mdi mdi-menu"></i>
+                </nav>
             </div>
-          </header>
-    </body>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    ABOUT
+                </div>
+
+                <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+
+                <div class="skills-wrapper flex row-gt-sm">
+
+                    <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
+
+                        <img src="img/pfp.jpg" class="me" />
+                        <!-- up arrow no work <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+
+                        <div class="label bold">Who am I?</div>
+                        <div>
+                            <a class="highlight bold">Me:</a>
+                            My name is Blake Thorne. I am a second year student at the University of Technology Sydney
+                            (UTS).
+                            <br />
+
+                            <a class="highlight bold">Education:</a>
+                            I study a Bachelor of Engineering (Honours) majoring in Software Engineering with a Diploma
+                            in Professional Engineering Practice.
+                            <br />
+
+                            <a class="highlight bold">Profile:</a>
+                            I am a self-motivated individual with a serious passion for everything and anything within the
+                            computer software domain. This includes Application Programming, Website Development, Game Development and much more.
+                            I search to distinguish myself from others, and realise my goals, through a continuous
+                            dedication to learning and upskilling.
+                        </div>
+                    </div>
+
+                    <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-right">
+                        <!-- Right side of page-->
+
+                        <div>
+                            <!-- Web Dev Container -->
+                            <a class="highlight bold">
+                                Web Development
+                            </a>
+
+                            <div class="flex row-gt-sm">
+                                <!-- Skill Align Container -->
+
+                                <!-- HTML: -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> HTML</div>
+                                    <div>
+                                        <img src="img/skillImages/html.png" class="skillImages" />
+                                    </div>
+                                </div>
+
+                                <!-- CSS: -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> CSS</div>
+                                    <div>
+                                        <img src="img/skillImages/css.png" class="skillImages" />
+                                    </div>
+                                </div>
+
+                                <!-- JavaScript: -->
+                                <div class="skillBox" >
+                                    <div class="skillFormat bold"> JavaScript</div>
+                                    <div>
+                                        <img src="img/skillImages/javascript.png" class="skillImages" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- Other Languages Container -->
+                            <a class="highlight bold">
+                                Other Languages
+                            </a>
+                            <div class="flex row-gt-sm">
+                                <!-- Skill Align Container -->
+                                <!-- Java: -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> Java </div>
+                                    <div>
+                                        <img src="img/skillImages/java.png" class="skillImages" />
+                                    </div>
+                                </div>
+
+                                <!-- C++: -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> C++ </div>
+                                    <div>
+                                        <img src="img/skillImages/c++.png" class="skillImages" />
+                                    </div>
+                                </div>
+
+                                <!-- C#: -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> C# </div>
+                                    <div>
+                                        <img src="img/skillImages/c_sharp.png" class="skillImages" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <!-- Tools Container -->
+                            <a class="highlight bold">
+                                Tools
+                            </a>
+                            <div class="flex row-gt-sm">
+                                <!-- Skill Align Container -->
+                                <!-- Unity -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> Unity </div>
+                                    <div>
+                                        <img src="img/skillImages/unity.png" class="skillImages" />
+                                    </div>
+                                </div>
+
+                                <!-- MySQL -->
+                                <div class="skillBox">
+                                    <div class="skillFormat bold"> MySQL </div>
+                                    <div>
+                                        <img src="img/skillImages/MySQL.png" class="skillImages" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- PORTFOLIO -->
+    <section class="flex" id="portfolio">
+        
+        <!--
+                <div class="header waypoint" data-animation="slide-in-right">
+                    PROJECTS
+                </div>
+                
+                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+                -->
+        <div class="filter-wrap waypoint" data-animation="fade-in">
+            <!--
+                    <div class="flex row">
+                        <div class="filter" data-filter="all">ALL</div>
+                        <div class="filter" data-filter=".rails">JAVA</div>
+                        <div class="filter" data-filter=".react">C#</div>
+                        <div class="filter" data-filter=".js">JAVASCRIPT</div>
+                    </div>
+                -->
+            <div class="float-bar" style="display:none">
+                
+                <div class="flex row">
+                    <div class="filter"></div>
+                    <!-- <div class="filter" data-filter="all">ALL</div>
+                    <div class="filter" data-filter=".rails">JAVA</div>
+                    <div class="filter" data-filter=".react">C#</div>
+                    <div class="filter" data-filter=".js">JAVASCRIPT</div>
+                    -->
+                </div>
+                
+            </div>
+    
+        </div>
+    
+    
+    
+        <div id="gallery" class="container flex row wrap waypoint">
+    
+            <!-- templates 
+                    <div class="mix react" data-my-order="1">
+                        
+                        <div>
+                            <div class="card"></div>
+                            <div class="text">
+                                <div class="bold">New Relic</div>
+                                <span class="highlight">React / Ruby on Rails / AEM</span>
+                            </div>
+                            <div class="button" id="newrelic">LEARN MORE</div>
+                        </div>
+                    </div>
+    
+                    <div class="mix rails" data-my-order="1">
+                        
+                        <div>
+                            <div class="card"></div>
+                            <div class="text">
+                                <div class="bold">Walker Tracker</div>
+                                <span class="highlight">JS / Ruby on Rails</span>
+                            </div>
+                            <div class="button" id="walker">LEARN MORE</div>
+                        </div>
+                    </div>
+    
+                    <div class="mix js" data-my-order="1">
+                        
+                        <div>
+                            <div class="card"></div>
+                            <div class="text">
+                                <div class="bold">The Mall</div>
+                                <span class="highlight">React.js / Node</span>
+                            </div>
+                            <div class="button" id="themall">LEARN MORE</div>
+                        </div>
+                    </div>
+                    -->
+        </div>
+    </section>
+
+        <!-- CONTACT -->
+        <section id="contact">
+            <svg preserveAspectRatio="none" viewBox="0 0 100 102" height="75" width="100%" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" class="svgcolor-light">
+                <path d="M0 0 L50 100 L100 0 Z" fill="#f5f5f5" stroke="#f5f5f5"></path>
+            </svg>
+            <div class="container flex">
+                <div class="header waypoint" data-animation="slide-in-left">
+                    CONTACT
+                </div>
+                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
+                <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">
+                    Want to get in touch or work together?
+                    <br />
+                    Feel free to contact me below.
+                </div>
+
+                <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+                    <input placeholder="Name" type="text" name="name" required />
+                    <input placeholder="Enter email" type="email" name="email" required />
+                    <textarea placeholder="Your Message" type="text" name="message"></textarea>
+                    <div id="success">
+                        <div>
+                            Your message was sent successfully. Thanks!<span id="close" class="mdi mdi-close"></span>
+                        </div>
+                    </div>
+                    <input class="button" type="submit" id="submit" value="SUBMIT" />
+                </form>
+            </div>
+        </section>
+
+        <footer>
+            <i class="mdi mdi-chevron-double-up page-link" dest="home"></i>
+
+            <div class="icon-wrap flex row">
+                <a href="https://www.linkedin.com/in/blake-thorne/">
+                    <div class="flex icon" id="icon-2">
+                        <i class="mdi mdi-linkedin"></i>
+                    </div>
+                </a>
+                <a href="https://github.com/Jasper3671">
+                    <div class="flex icon" id="icon-5">
+                        <i class="mdi mdi-github-box"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="info-box">
+                <div class="footnote">
+                    BLAKE THORNE <span class="highlight">&copy;2022</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="preload">
+        <img src="img/me.png" />
+        <img src="img/filler.jpg" />
+        <img src="img/thumb-1.jpg" />
+        <img src="img/thumb-2.jpg" />
+        <img src="img/thumb-3.jpg" />
+        <img src="img/thumb-4.jpg" />
+        <img src="img/thumb-5.jpg" />
+        <img src="img/thumb-6.jpg" />
+        <img src="img/slides/discover-0.jpg" />
+        <img src="img/slides/discover-1.jpg" />
+        <img src="img/slides/discover-2.jpg" />
+        <img src="img/slides/ordering-0.jpg" />
+        <img src="img/slides/ordering-1.jpg" />
+        <img src="img/slides/ordering-2.jpg" />
+        <img src="img/slides/newrelic-0.jpg" />
+        <img src="img/slides/newrelic-1.jpg" />
+        <img src="img/slides/newrelic-2.jpg" />
+        <img src="img/slides/mystand-0.jpg" />
+        <img src="img/slides/mystand-1.jpg" />
+        <img src="img/slides/mystand-2.jpg" />
+        <img src="img/slides/never-0.jpg" />
+        <img src="img/slides/never-1.jpg" />
+        <img src="img/slides/never-2.jpg" />
+        <img src="img/slides/powur-0.jpg" />
+        <img src="img/slides/powur-1.jpg" />
+        <img src="img/slides/powur-2.jpg" />
+        <img src="img/slides/roambi-0.jpg" />
+        <img src="img/slides/roambi-1.jpg" />
+        <img src="img/slides/roambi-2.jpg" />
+        <img src="img/slides/themall-0.jpg" />
+        <img src="img/slides/themall-1.jpg" />
+        <img src="img/slides/themall-2.jpg" />
+        <img src="img/slides/walker-0.jpg" />
+        <img src="img/slides/walker-1.jpg" />
+        <img src="img/slides/walker-2.jpg" />
+    </div>
+</body>
+
 </html>
+
+<script src="scripts/canvas.js"></script>
