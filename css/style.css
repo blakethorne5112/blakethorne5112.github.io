@@ -6,3 +6,23 @@ body{
     line-height: 1.6em;
     margin:0;
 }
+#navbar{
+    background-color: #333;
+    color: white;
+}
+
+#navbar ul{
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li{
+    display:inline;
+}
+
+#navbar a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
