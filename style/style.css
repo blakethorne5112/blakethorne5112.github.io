@@ -543,6 +543,10 @@ section:nth-of-type(2) .skills-wrapper .me {
   height: 200px;
 }
 
+.me{
+  border-radius: 50%;
+}
+
 section:nth-of-type(2) .skills-wrapper .skillImages {
   height: 60px;
 }
@@ -1106,7 +1110,9 @@ footer .footnote .highlight {
         min-width: 500px;
     }
 }
+@media screen and (min-width: 300px){
 
+}
 @media screen and (min-width: 960px) {
   .waypoint {
     opacity: 0;
