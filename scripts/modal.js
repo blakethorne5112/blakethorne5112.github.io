@@ -19,6 +19,12 @@ $(document).ready(function () {
                 'This site features a simple project where clicking into the entry fields shows a little animation for the field titles.',
             link: 'https://htmlpreview.github.io/?https://github.com/blakethorne5112/Login-Input-Wave/blob/main/index.html'
         },
+        animbox: {
+            title: 'Animated 3D Boxes',
+            detail:
+                'This site features a cool project where pressing the Magic button will toggle joining and separating boxes that display a gif.',
+            link: 'https://htmlpreview.github.io/?https://github.com/blakethorne5112/Animated-3d-Boxes/blob/main/index.html'
+        },
         cpplogin: {
             title: 'Simple Login System',
             detail:
