@@ -99,6 +99,11 @@ $(function () {
         );
     });
 
+    // CONVEYOR BELT ANIMATION
+    window.addEventListener('load', function() {
+        document.querySelector('.conveyor-belt').style.animationPlayState = 'running';
+    });
+
     $('.mdi-menu').click(function () {
         $('.link-wrap').toggleClass('visible');
     });

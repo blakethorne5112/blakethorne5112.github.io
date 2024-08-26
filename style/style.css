@@ -602,7 +602,7 @@ section:nth-of-type(2) .skillBox { /* The div containing skillFormat and skillIm
 }
 
 section:nth-of-type(2) .skillFormat {
-    background-color: #04c2c9;
+    background-color: #e31b6d;
     width: 100%;
     color: #fff;
     font-size: 11pt;
@@ -942,6 +942,36 @@ footer .footnote {
 footer .footnote .highlight {
   color: #e31b6d;
   font-family: "Open Sans";
+}
+
+.conveyor-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.conveyor-belt {
+  display: flex;
+  width: calc(200%); /* Adjust width to accommodate the duplicated items */
+  animation: conveyor 20s linear infinite;
+}
+
+.conveyor-item {
+  width: 12.5%; /* Adjust to fit 8 items in 100% width (if 4 items originally) */
+  box-sizing: border-box;
+  border-right-color: #000;
+  border-right-width: 20px;
+  padding: 20px;
+  flex-shrink: 30;
+}
+
+@keyframes conveyor {
+  from {
+      transform: translateX(0%);
+  }
+  to {
+      transform: translateX(-50%); /* Move only by 50% of the width to wrap around */
+  }
 }
 
 @media screen and (max-width: 400px) {
