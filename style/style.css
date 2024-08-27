@@ -754,10 +754,10 @@ section:nth-of-type(3) #gallery .mix .button:hover {
   color: #fff;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(1) .card {
-  background: url("../img/Scroll.png") center center/cover;
+  background: url("../img/PokeRogue.png") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(2) .card {
-  background: url("../img/rotate.png") center center/cover;
+  background: url("../img/Realife.jpg") center center/cover;
 }
 section:nth-of-type(3) #gallery .mix:nth-child(3) .card {
   background: url("../img/inputwav.png") center center/cover;

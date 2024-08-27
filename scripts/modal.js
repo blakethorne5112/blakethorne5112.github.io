@@ -2,16 +2,16 @@ $(document).ready(function () {
     // MODAL
     var modalText = {
         scrollproject: {
-            title: 'Scroll Project',
+            title: 'PokéRogue',
             detail:
-                'This site features a simple project where as you scroll, new content scrolls onto the page.',
-            link: 'https://htmlpreview.github.io/?https://github.com/blakethorne5112/Scroll-Project-Working/blob/main/index.html'
+                'PokéRogue is an unofficial, open-source web game based on the popular video game series - Pokémon. I have contributed ideas and made bug fixes while working with other developers to improve the game.',
+            link: 'https://pokerogue.net/'
         },
         rotatenav: {
-            title: 'Rotating Navigation',
+            title: 'Realife Clothing',
             detail:
-                'This site features a simple project where clicking the navigation bar will rotate the page and reveal navigation options.',
-            link: 'https://htmlpreview.github.io/?https://github.com/blakethorne5112/Rotating-Nav/blob/main/index.html'
+                'Reworked the design and layout of Realife Clothings website for a smoother user experience. Still ongoing working on the project with any new changes that are requested.',
+            link: 'https://realifeclothing.com/'
         },
         inputwave: {
             title: 'Login Input Wave',
