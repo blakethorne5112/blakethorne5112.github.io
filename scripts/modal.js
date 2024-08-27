@@ -1,41 +1,23 @@
 $(document).ready(function () {
     // MODAL
     var modalText = {
-        scrollproject: {
+        pokerogue: {
             title: 'PokéRogue',
             detail:
                 'PokéRogue is an unofficial, open-source web game based on the popular video game series - Pokémon. I have contributed ideas and made bug fixes while working with other developers to improve the game.',
             link: 'https://pokerogue.net/'
         },
-        rotatenav: {
+        realife: {
             title: 'Realife Clothing',
             detail:
                 'Reworked the design and layout of Realife Clothings website for a smoother user experience. Still ongoing working on the project with any new changes that are requested.',
             link: 'https://realifeclothing.com/'
         },
-        inputwave: {
-            title: 'Login Input Wave',
+        checkin: {
+            title: '.NET Check In System',
             detail:
-                'This site features a simple project where clicking into the entry fields shows a little animation for the field titles.',
-            link: 'https://htmlpreview.github.io/?https://github.com/blakethorne5112/Login-Input-Wave/blob/main/index.html'
-        },
-        animbox: {
-            title: 'Animated 3D Boxes',
-            detail:
-                'This site features a cool project where pressing the Magic button will toggle joining and separating boxes that display a gif.',
-            link: 'https://htmlpreview.github.io/?https://github.com/blakethorne5112/Animated-3d-Boxes/blob/main/index.html'
-        },
-        cpplogin: {
-            title: 'Simple Login System',
-            detail:
-                'A small login system coded in C++ that allows you to create an account and successfully login with it. The system is able to detect whether an account previously existed or not, and is able to verify correct login details.',
-            link: 'https://github.com/blakethorne5112/LoginSystem'
-        },
-        tdunity: {
-            title: 'Tower Defence Game',
-            detail:
-                'A collaboratively coded Tower Defence game, coded in C# using Unity.',
-            link: 'https://github.com/blakethorne5112/UnityPlatformGame'
+                'A simple project that demonstrates a check in system written in C# .NET. A collaborative project that features authentication/authorisation, CRUD operations on a database, as well as a few other interesting features.',
+            link: 'https://github.com/blakethorne5112/DotNet-User-Check-In'
         },
         git: {
             title: 'Projects currently in progress',
